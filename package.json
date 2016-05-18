@@ -17,7 +17,7 @@
     "gulp-livereload": "^3.8.0",
     "gulp-rename": "^1.2.0",
     "gulp-shell": "~0.3.0",
-    "gulp-ssh": "^0.5.2",
+    "gulp-ssh": "^0.5.6",
     "gulp-uglify": "^1.2.0",
     "http-server": "^0.6.1",
     "jasmine-core": "^2.3.4",
@@ -32,7 +32,7 @@
     "shelljs": "^0.2.6"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "bower install; mv dev/lib/bootstrap/dist/css/bootstrap.css dev/lib/bootstrap/dist/css/bootstrap.scss; mv dev/lib/bootstrap/fonts/ dev/fonts/",
     "prestart": "npm install",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
