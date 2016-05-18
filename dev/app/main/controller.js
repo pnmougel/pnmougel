@@ -23,9 +23,7 @@ angular.module('pnmougel.main', ['ngRoute', 'ngMap', 'duScroll']).value('duScrol
   var portfolio = document.getElementById('portfolio');
   var linearEasing = function(x) { return x; }
 
-
   angular.element($window).bind("scroll", function() {
-    console.log($rootScope.scroll.skipScroll);
     if(!($rootScope.scroll.skipScroll) && screenWidth > 800) {
       var st = $window.pageYOffset;
       if (st > $rootScope.scroll.lastPosition){
