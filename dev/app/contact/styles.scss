@@ -1,0 +1,76 @@
+.contact {
+  color: #333;
+  a {
+    color: #333;
+  }
+  .contact-info {
+    list-style: none;
+    font-size: 18px;
+
+    li {
+      margin-bottom: 17px;
+    }
+
+    i {
+      position: relative;
+      top: 2px;
+      text-align: center;
+      width: 45px;
+      font-size: 20px;
+    }
+    .nodisplay {
+      visibility: hidden;
+    }
+  }
+
+  $linkedin-color: #4498C8;
+  $facebook-color: #305891;
+  $twitter-color: #2CA8D2;
+  $stackoverflow-color: #FCA733;
+  $github-color: #000000;
+
+  .social {
+    list-style: none;
+
+    p {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom:30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+    i {
+      border-radius: 3px;
+      color: #FFF;
+      font-size: 20px;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      line-height:30px;
+      margin-right: 15px;
+    }
+    i.fa-facebook {
+      background-color: $facebook-color;
+    }
+    i.fa-twitter {
+      background-color: $twitter-color;
+    }
+    i.fa-linkedin {
+      background-color: $linkedin-color;
+    }
+    i.fa-stack-overflow {
+      background-color: $stackoverflow-color;
+    }
+    i.fa-github-alt {
+      background-color: $github-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.footer {
+  background-color: #fff;
+  padding: 50px 0;
+
+  a {
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size:12px;
+  }
+  span.separator {
+    margin: 0 10px;
+    font-weight:bold;
+    font-size:18px;
+    position: relative;
+    top: -1px;
+    color: #428bca;
+  }
+}

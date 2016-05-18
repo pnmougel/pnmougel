@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pierre-Nicolas Mougel</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="">
+
+  <link rel="shortcut icon" href="icons/16.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/16.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/16.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/152.png" />
+  <link rel="icon" type="image/png" href="icons/196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="icons/96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="icons/32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="icons/16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="icons/128.png" sizes="128x128" />
+
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="icons/144.png" />
+  <meta name="msapplication-square70x70logo" content="icons/70.png" />
+  <meta name="msapplication-square150x150logo" content="icons/150.png" />
+  <meta name="msapplication-wide310x150logo" content="icons/310.png" />
+  <meta name="msapplication-square310x310logo" content="icons/310.png" />
+
+  <!-- style:css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endinject -->
+
+  <!-- jquery:js -->
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+
+  <!-- lodash:js -->
+  <script src="lib/lodash/dist/lodash.min.js"></script>
+  <!-- endinject -->
+
+  <!-- vendor:js -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="lib/angular-animate/angular-animate.js"></script>
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/ngmap/build/scripts/ng-map.js"></script>
+  <script src="lib/angular-scroll/angular-scroll.js"></script>
+  <!-- endinject -->
+
+  <!-- app:js -->
+  <script src="app/app.js"></script>
+  <script src="app/contact/directive.js"></script>
+  <script src="app/cv/directive.js"></script>
+  <script src="app/footer/directive.js"></script>
+  <script src="app/main/controller.js"></script>
+  <script src="app/menu/directive.js"></script>
+  <script src="app/portfolio/directive.js"></script>
+  <!-- endinject -->
+
+  <base href="/">
+</head>
+
+<body ng-app="pnmougel">
+  <menu></menu>
+  <div class="container-fluid main-container" style="top: 50px; position: relative;">
+    <ng-view class="main-container">
+    </ng-view>
+  </div>
+</body>
+</html>

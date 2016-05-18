@@ -1,0 +1,18 @@
+// Lib import
+@import "../lib/bootstrap/dist/css/bootstrap.css";
+
+// App import
+@import "colors";
+@import "fonts";
+@import "utils";
+@import "animate";
+
+/* app */
+@import "../app/styles";
+@import "../app/contact/styles";
+@import "../app/cv/styles";
+@import "../app/footer/styles";
+@import "../app/main/styles";
+@import "../app/menu/styles";
+@import "../app/portfolio/styles";
+/* end */

@@ -1,0 +1,19 @@
+<nav class="navbar {{scroll.atTop ? 'at-top' : 'not-at-top'}}">
+    <div class="container-fluid" >
+        <div class="navbar-header" >
+            <a class="navbar-brand" du-smooth-scroll="header">
+                <img class="photo-thumb" src="/images/identite_square_thumb.png" alt="Photo of Pierre-Nicolas Mougel">
+                Pierre-Nicolas Mougel
+            </a>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+            <a class="btn btn-link navbar-btn" du-scrollspy="portfolio" ng-click="doScroll('portfolio')">Portfolio</a>
+            <!--<a href="https://github.com/pnmougel" class="btn btn-link navbar-btn">Github</a>-->
+            <a class="btn btn-link navbar-btn" du-scrollspy="cv" ng-click="doScroll('cv')">Curriculum Vitae</a>
+            <a class="btn btn-link navbar-btn" du-scrollspy="contact" ng-click="doScroll('contact')">Contact</a>
+            <!--<a class="btn btn-link navbar-btn">Témoignages</a>-->
+            <!--<a class="btn btn-link navbar-btn">Articles</a>-->
+            <!--<a class="btn btn-link navbar-btn">Compétences</a>-->
+        </div>
+    </div>
+</nav>

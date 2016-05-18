@@ -1,0 +1,49 @@
+
+<div class="row bg-grey contact">
+    <div class="col-lg-12 section">
+        <div class="section-header">
+            <h3>Contactez-moi</h3>
+        </div>
+        <div class="row" style="margin-bottom: 40px;">
+            <div class="col-lg-3 col-lg-offset-1">
+
+                <ul class="social">
+                    <!--<p>Réseaux sociaux</p>-->
+                    <li ng-repeat="socialItem in socialItems">
+                        <a href="{{socialItem.link}}">
+                            <i class="fa {{socialItem.icon}}" aria-hidden="true"></i>{{socialItem.label}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="contact-info">
+                    <li style="margin-bottom: 0;"><i class="glyphicon glyphicon-map-marker"></i>Pierre-Nicolas Mougel</li>
+                    <li style="margin-bottom: 0;"><i class="glyphicon glyphicon-map-marker nodisplay"></i>34 Rue Montesquieu</li>
+                    <li><i class="glyphicon glyphicon-map-marker nodisplay"></i>69007 Lyon</li>
+                    <li><i class="fa fa-at" aria-hidden="true"></i>pnmougel@gmail.com</li>
+                    <li><i class="fa fa-skype" aria-hidden="true"></i>pnmougel</li>
+                    <!--<li><i class="glyphicon glyphicon-phone"></i>06.67.26.59.00</li>-->
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" class="form-control" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div map-lazy-load="https://maps.google.com/maps/api/js">
+        <ng-map style="height: 280px" scrollwheel="false" center="34 rue montesquieu, Lyon, France" zoom="12" zoom-control="true" overview-map-control="false" map-type-control="false" street-view-control="false">
+            <marker position="45.7529652,4.8397048" title=""></marker>
+        </ng-map>
+    </div>
+</div>
