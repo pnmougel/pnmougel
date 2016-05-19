@@ -8,4 +8,5 @@ gulp.task('watch', function () {
     gulp.watch('dev/app/**/*.scss', ['inject:sass', 'sass']);
     gulp.watch('dev/scss/**/*.scss', ['inject:sass', 'sass']);
     gulp.watch('bower.json', ['ai']);
+    gulp.watch('dev/data/projects/**/*.json', ['inject:data', 'reload']);
 });

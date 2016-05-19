@@ -14,3 +14,18 @@ gulp.task('inject:sass', function () {
         }))
         .pipe(gulp.dest('./dev/scss/'));
 });
+
+gulp.task('inject:data', function () {
+    return gulp.src('./dev/data/model/projects.json')
+        .pipe(inject(gulp.src('./dev/data/projects/**/*.json'), {
+            starttag: '"projects": [',
+            endtag: ']',
+            // name: 'app',
+            transform: function (filePath, file, index) {
+                var content = file.contents.toString('utf8');
+                return (index == 0 ? content : ',' + content)
+                // return file.contents.toString('utf8')
+            },
+        }))
+        .pipe(gulp.dest('./dev/data'));
+});

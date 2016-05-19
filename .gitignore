@@ -8,3 +8,5 @@ www
 dev/css
 dev/lib
 dev/fonts
+dev/data/projects.json
+dev/backgrounds
