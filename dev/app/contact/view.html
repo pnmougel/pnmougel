@@ -5,28 +5,7 @@
             <h3>Contactez-moi</h3>
         </div>
         <div class="row" style="margin-bottom: 40px;">
-            <div class="col-lg-3 col-lg-offset-1">
-
-                <ul class="social">
-                    <!--<p>Réseaux sociaux</p>-->
-                    <li ng-repeat="socialItem in socialItems">
-                        <a href="{{socialItem.link}}">
-                            <i class="fa {{socialItem.icon}}" aria-hidden="true"></i>{{socialItem.label}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul class="contact-info">
-                    <li style="margin-bottom: 0;"><i class="glyphicon glyphicon-map-marker"></i>Pierre-Nicolas Mougel</li>
-                    <li style="margin-bottom: 0;"><i class="glyphicon glyphicon-map-marker nodisplay"></i>34 Rue Montesquieu</li>
-                    <li><i class="glyphicon glyphicon-map-marker nodisplay"></i>69007 Lyon</li>
-                    <li><i class="fa fa-at" aria-hidden="true"></i>pnmougel@gmail.com</li>
-                    <li><i class="fa fa-skype" aria-hidden="true"></i>pnmougel</li>
-                    <!--<li><i class="glyphicon glyphicon-phone"></i>06.67.26.59.00</li>-->
-                </ul>
-            </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-lg-offset-3">
                 <form>
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="Email">
@@ -36,6 +15,15 @@
                     </div>
                     <button type="submit" class="btn btn-default">Envoyer</button>
                 </form>
+            </div>
+            <div class="col-lg-3">
+                <ul class="social">
+                    <li ng-repeat="socialItem in socialItems">
+                        <a href="{{socialItem.link}}">
+                            <i class="fa {{socialItem.icon}}" aria-hidden="true"></i>{{socialItem.label}}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
