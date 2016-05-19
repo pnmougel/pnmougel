@@ -1,0 +1,25 @@
+{
+
+  "order": 1,
+  "label": "VitrineVo",
+  "imagePath": "images/vitrinevo/",
+  "padding": 50,
+  "image": "logo.png",
+  "logo": "vitrinevo_fr_bleu.png",
+  "images": [{
+    "name": "036.png",
+    "description": ""
+  }, {
+    "name": "037.png",
+    "description": ""
+  }, {
+    "name": "038.png",
+    "description": ""
+  }, {
+    "name": "039.png",
+    "description": ""
+  }, {
+    "name": "040.png",
+    "description": ""
+  }]
+}

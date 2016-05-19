@@ -1,0 +1,24 @@
+{
+  "order": 1,
+  "label": "Arpejeh",
+  "imagePath": "images/arpejeh/",
+  "image": "logo_white.png",
+  "logo": "logo_ok.png",
+  "padding": 30,
+  "images": [{
+    "name": "049.png",
+    "description": ""
+  }, {
+    "name": "050.png",
+    "description": ""
+  }, {
+    "name": "051.png",
+    "description": ""
+  }, {
+    "name": "052.png",
+    "description": ""
+  }, {
+    "name": "053.png",
+    "description": ""
+  }]
+}

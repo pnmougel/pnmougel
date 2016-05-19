@@ -1,0 +1,12 @@
+{
+  "order": 1,
+  "label": "Pilot'Partner",
+  "imagePath": "images/pilotpartner-landing/",
+  "padding": 100,
+  "image": "logo4.png",
+  "logo": "logo2.png",
+  "images": [{
+    "name": "058.png",
+    "description": ""
+  }]
+}

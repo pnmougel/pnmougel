@@ -1,0 +1,24 @@
+{
+  "order": 1,
+  "label": "Groupe Jean-Louis Guilmault",
+  "imagePath": "images/guilmault/",
+  "image": "logo_white.png",
+  "logo": "logo2.png",
+  "padding": 50,
+  "images": [{
+    "name": "036.png",
+    "description": ""
+  }, {
+    "name": "037.png",
+    "description": ""
+  }, {
+    "name": "038.png",
+    "description": ""
+  }, {
+    "name": "039.png",
+    "description": ""
+  }, {
+    "name": "040.png",
+    "description": ""
+  }]
+}
