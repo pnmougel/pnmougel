@@ -5,6 +5,7 @@ var App = angular.module('pnmougel', [
   'ngRoute',
   'pnmougel.main'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
