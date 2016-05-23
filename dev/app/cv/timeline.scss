@@ -1,0 +1,170 @@
+.timeline-container {
+  $line-width: 2px;
+  $left-position: 20%;
+  $date-left-position: -80%;
+  $content-width: 65%;
+  $left-content-position: 31%;
+
+  @mixin item-color($color) {
+    .cd-timeline-img {
+      border-color: $color;
+      color: $color;
+    }
+    .cd-timeline-content:hover {
+      border-right-color: $color;
+    }
+  }
+
+  background-color: $cv-color;
+
+  @media (min-width: $screen-md) {
+    min-height: 550px;
+  }
+
+  .cd-timeline {
+    $circle-size: 45px;
+    position: relative;
+    padding: 2px 0;
+    margin: 3em 0;
+
+
+    &::before {
+      /* this is the vertical line */
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: $line-width;
+      background-color: #CCC;
+      left: $left-position;
+      margin-left: -$line-width;
+    }
+
+    .cd-timeline-block {
+      position: relative;
+      margin: 10px 0;
+      cursor: pointer;
+      -webkit-transition:all linear 0.3s;
+      transition:all linear 0.3s;
+      div {
+        -webkit-transition:background-color, border-color linear 0s;
+        transition:background-color, border-color linear 0s;
+      }
+    }
+
+
+    .cd-timeline-block.ng-hide {
+      margin:0;
+      padding:0;
+      height:0;
+
+      div {
+        background-color: $cv-color;
+        border-color: $cv-color;
+      }
+
+      h2, p, .cd-date, i, .cd-timeline-content:after, .cd-timeline-img {
+        display: none;
+      }
+    }
+
+    .cd-timeline-img {
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+      border: 2px solid #CCC;
+      background-color: #fff;
+      text-align: center;
+      line-height:$circle-size - 5px;
+      color: #AAA;
+      font-size:20px;
+
+      width: $circle-size;
+      height: $circle-size;
+      left: $left-position;
+      margin-left: -$circle-size / 2;
+    }
+
+
+    .degree {
+      @include item-color(#F0AD4E);
+    }
+    .jobexperience {
+      @include item-color(#EB6841);
+    }
+    .other {
+      @include item-color(#AAAAAA);
+    }
+    .project {
+      @include item-color(#6A4A3C);
+    }
+    .freelance {
+      @include item-color(#00A0B0);
+    }
+
+
+    .cd-timeline-content {
+      position: relative;
+      background: #FFF;
+      left: $left-content-position;
+      padding: 8px 15px;
+      width: $content-width;
+      border-right: 4px solid #FFF;
+
+      p {
+        padding: 0;
+        margin:0;
+      }
+
+      p, .cd-date {
+        font-size: 13px;
+      }
+      .cd-date {
+        display: inline-block;
+      }
+
+      // Arrow
+      &::after {
+        content: '';
+        position: absolute;
+        top: 13px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-right-color: #FFF;
+      }
+
+      h2 {
+        padding:0;
+        margin:0;
+        font-size: 14px;
+        line-height:30px;
+      }
+
+      &::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: $color-3;
+      }
+
+      .cd-date {
+        color: #FFF;
+        padding: .8em 0;
+        width: 50%;
+        position: absolute;
+        left: $date-left-position;
+        top: -11px;
+        font-size: 16px;
+        text-align: right;
+
+        @media (max-width: $screen-xs) {
+          left: -82%;
+          top: -5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
