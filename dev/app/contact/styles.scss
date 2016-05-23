@@ -1,7 +1,7 @@
 .contact {
-  color: #333;
+  color: $contact-color;
   a {
-    color: #333;
+    color: #3C4251;
   }
 
   $linkedin-color: #4498C8;
@@ -13,6 +13,12 @@
   $email-color: #00658B;
 
   .social {
+    @media (max-width: $screen-sm) {
+      margin-top: 30px;
+    }
+
+    //margin-top: 30px;
+    padding-left:0;
     list-style: none;
 
     p {
@@ -21,10 +27,11 @@
       margin-bottom:30px;
     }
 
-    li {
+    div {
       margin-bottom: 15px;
       font-size: 18px;
       cursor: pointer;
+      text-transform: uppercase;
     }
 
     a:hover {
@@ -63,4 +70,6 @@
     }
 
   }
+
+  @include header-color($contact-color);
 }

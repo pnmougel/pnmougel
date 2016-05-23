@@ -13,15 +13,15 @@ App.directive('contact', function () {
                 link: ''
             },{
                 icon: 'fa-linkedin',
-                label: 'LinkedIn',
+                label: 'linkedIn',
                 link: 'https://www.linkedin.com/in/pierre-nicolas-mougel-3ba91848'
             },{
                 icon: 'fa-facebook',
-                label: 'Facebook',
+                label: 'facebook',
                 link: 'https://www.facebook.com/pierrenicolas.mougel'
             },{
                 icon: 'fa-twitter',
-                label: 'Twitter',
+                label: 'twitter',
                 link: 'https://twitter.com/pnmougel'
             }
             //     ,{
