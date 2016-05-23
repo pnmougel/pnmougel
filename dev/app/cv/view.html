@@ -1,8 +1,64 @@
 
-<div class="row bg-grey contact">
+<div class="row bg-white cv">
     <div class="col-lg-12 section">
         <div class="section-header">
-            <h3>Curriculum Vitae</h3>
+            <div style="margin-bottom: 20px;">
+                <span class="title title-bold" >Curriculum</span>
+                <span class="title title-light">Vitae</span>
+            </div>
+            <div class="cv-category {{c.name == category ? 'selected': ''}}"
+                 ng-click="selectCategory(c)"
+                 ng-repeat="c in categories">{{c.label}}</div>
+        </div>
+    </div>
+    <div class="col-md-6 timeline-container">
+        <div class="row">
+        <div class="col-lg-6 col-lg-offset-5" >
+            <div class="cd-container cd-timeline" >
+                <div class="cd-timeline-block"
+                     ng-class="item.category"
+                     ng-mouseenter="selectCvItem(item)"
+                     ng-mouseleave="selectCvItem()"
+                     ng-repeat="item in cvItems"
+                     ng-show="category === 'all' || category === item.category">
+                    <div class="cd-timeline-img" >
+                        <i class="{{item.icon}}"></i>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>{{item.name}}</h2>
+                        <p ng-repeat="description in item.description">{{description}}</p>
+                    <span class="cd-date">
+                        {{item.date}}
+                        <div style="font-size: 12px;">{{item.length}}</div>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 hidden-xs">
+        <div class="row">
+        <div id="foo" class="col-lg-11 col-lg-offset-1" style="margin-top: 45px; margin-bottom: 30px;">
+            <div class="skills-container" >
+                <div class="skill-category" ng-repeat="skillCategory in skillCategories">
+                    <p>{{skillCategory.name}}</p>
+                    <div ng-if="!(skillCategory.showIcons)">
+                        <ul>
+                            <li style="color: {{!(showAllSkills || skill.selected) ? '#AAA' : '#333'}}"
+                                ng-repeat="skill in skillCategory.skills"
+                            >{{skill.label}}</li>
+                        </ul>
+                    </div>
+                    <div ng-if="skillCategory.showIcons">
+                        <div class="skill-icon"  ng-repeat="skill in skillCategory.skills  | orderBy:'-selected'">
+                            <img class="{{!(showAllSkills || skill.selected) ? 'inactive' : ''}}" ng-src="/images/skills/{{skill.id}}.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>
