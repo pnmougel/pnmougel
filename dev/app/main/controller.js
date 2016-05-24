@@ -1,48 +1,59 @@
 'use strict';
 
-angular.module('pnmougel.main', ['ngRoute', 'ngMap', 'duScroll']).value('duScrollOffset', 50)
+angular.module('pnmougel.main', ['ui.router', 'ngRoute', 'ngMap', 'duScroll', 'ngAnimate', 'scroll-animate-directive']).value('duScrollOffset', 0)
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {
-    templateUrl: 'app/main/view.html',
-    controller: 'MainCtrl'
-  });
-}])
+.config(function($stateProvider) {
+  $stateProvider
+      .state('main', {
+        url: "/",
+        templateUrl: 'app/main/view.html',
+        controller: 'MainCtrl'
+      });
+})
 
 
 .controller('MainCtrl', function($scope, $window, $document, $rootScope) {
-
   $rootScope.scroll = {
     goToTop: 2000,
     lastPosition: 0,
-    atTop: true,
-    skipScroll: false
+    skipScroll: false,
+    inScroll: false,
+    menuClasses: 'menu-header at-top'
   };
 
   var screenWidth = $window.innerWidth;
-  var portfolio = document.getElementById('portfolio');
+  var portfolio = $("#portfolio");
   var linearEasing = function(x) { return x; }
 
+  $scope.ids = ['header', 'portfolio', 'info', 'cv', 'contact'];
+  $scope.elements = $scope.ids.map(function(id) {
+    return {element: $('#' + id), id: id}
+  });
+
+
   angular.element($window).bind("scroll", function() {
-    if(!($rootScope.scroll.skipScroll) && screenWidth > 800) {
-      var st = $window.pageYOffset;
-      if (st > $rootScope.scroll.lastPosition){
-        if(st < $rootScope.scroll.goToTop) {
-          $rootScope.scroll.atTop = false;
-          $document.scrollToElement(portfolio, 0, 70, linearEasing).then(function() {
-            $rootScope.scroll.goToTop = $window.pageYOffset;
-            $rootScope.scroll.atTop = false;
-          });
-        }
-      } else {
-        if(st < $scope.scroll.goToTop - 50) {
-          $rootScope.scroll.atTop = true;
-          $document.scrollTopAnimated(0, 70, linearEasing).then(function() {
-            $rootScope.scroll.atTop = true;
-          });
+    const top = $window.pageYOffset;
+
+    $scope.elements.forEach(function(element) {
+      const topElement = element.element.offset().top;
+      const elementHeight = element.element.children().height();
+
+      if(top > topElement - 5 && top < topElement + elementHeight) {
+        $rootScope.scroll.menuClasses = 'menu-' + element.id;
+        // $rootScope.scroll.menuClasses += topElement === 0 ? ' at-top' : ' not-at-top'
+        $scope.$apply();
+      }
+    });
+
+    const fooElement = $('#foo');
+    if(fooElement.offset()) {
+      if(!($rootScope.scroll.skipScroll) && screenWidth > 800) {
+        if(top > fooElement.offset().top - 50 && top < $("#contact").offset().top - 600) {
+          $(".skills-container").css('top', (top - fooElement.offset().top + 80) + 'px')
+        } else if(top < $("#foo").offset().top - 50) {
+          $(".skills-container").css('top', '0px')
         }
       }
-      $scope.scroll.lastPosition = st;
     }
   });
 });
