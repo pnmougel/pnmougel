@@ -1,0 +1,16 @@
+<div class="row info">
+    <div class="col-lg-6 col-lg-offset-3">
+        <div class="row service-item" ng-repeat="service in services">
+            <div class="col-xs-4">
+                <div class="service-icon" ani-view>
+                    <i ng-class="service.icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-xs-7 service-right">
+                <div class="service-name from-right" ani-view>{{service.label}}</div>
+                <div class="service-description from-right" ani-view>{{service.description}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
