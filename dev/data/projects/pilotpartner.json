@@ -1,12 +1,30 @@
 {
-  "order": 1,
+
+  "order": 3,
+  "name": "pilotpartner",
   "label": "Pilot'Partner",
-  "imagePath": "images/pilotpartner-landing/",
-  "padding": 100,
-  "image": "logo4.png",
-  "logo": "logo2.png",
+  "imagePath": "images/pilotpartner/",
+  "padding": 60,
+  "link": {
+    "url": "http://www.pilotpartner.fr/",
+    "private": false
+  },
+  "client": "Pilot'Partner",
+  "description": "Site vitrine pour une société d'aménagement de locaux",
   "images": [{
-    "name": "058.png",
+    "id": "059",
+    "description": ""
+  },{
+    "id": "060",
+    "description": ""
+  },{
+    "id": "061",
+    "description": ""
+  },{
+    "id": "062",
+    "description": ""
+  },{
+    "id": "063",
     "description": ""
   }]
 }

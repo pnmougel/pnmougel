@@ -9,4 +9,5 @@ gulp.task('watch', function () {
     gulp.watch('dev/scss/**/*.scss', ['inject:sass', 'sass']);
     gulp.watch('bower.json', ['ai']);
     gulp.watch('dev/data/projects/**/*.json', ['inject:data', 'reload']);
+    gulp.watch(['dev/data/cv.json', 'dev/data/skills.json'], ['reload']);
 });

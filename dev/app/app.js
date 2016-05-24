@@ -2,10 +2,12 @@
 
 // Declare app level module which depends on views, and components
 var App = angular.module('pnmougel', [
-  'ngRoute',
-  'pnmougel.main'
+  'ui.router',
+  'ngAnimate',
+  'pnmougel.main',
+  'pnmougel.project'
 ]).
-config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
-  $routeProvider.otherwise({redirectTo: '/'});
-}]);
+config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  // $locationProvider.html5Mode(true);
+  $urlRouterProvider.otherwise('/');
+});

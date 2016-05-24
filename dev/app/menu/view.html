@@ -1,19 +1,28 @@
-<nav class="navbar {{scroll.atTop ? 'at-top' : 'not-at-top'}}">
-    <div class="container-fluid" >
-        <div class="navbar-header" >
-            <a class="navbar-brand" du-smooth-scroll="header">
-                <img class="photo-thumb" src="/images/identite_square_thumb.png" alt="Photo of Pierre-Nicolas Mougel">
-                Pierre-Nicolas Mougel
-            </a>
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" ng-class="scroll.menuClasses">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" du-smooth-scroll="header">-->
+                <!--<img class="photo-thumb" src="/images/identite_square_thumb.png" alt="Photo of Pierre-Nicolas Mougel">-->
+                <!--Pierre-Nicolas Mougel-->
+            <!--</a>-->
         </div>
-        <div class="nav navbar-nav navbar-right">
-            <a class="btn btn-link navbar-btn" du-scrollspy="portfolio" ng-click="doScroll('portfolio')">Portfolio</a>
-            <!--<a href="https://github.com/pnmougel" class="btn btn-link navbar-btn">Github</a>-->
-            <a class="btn btn-link navbar-btn" du-scrollspy="cv" ng-click="doScroll('cv')">Curriculum Vitae</a>
-            <a class="btn btn-link navbar-btn" du-scrollspy="contact" ng-click="doScroll('contact')">Contact</a>
-            <!--<a class="btn btn-link navbar-btn">Témoignages</a>-->
-            <!--<a class="btn btn-link navbar-btn">Articles</a>-->
-            <!--<a class="btn btn-link navbar-btn">Compétences</a>-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#portfolio" du-scrollspy="portfolio" ng-click="doScroll('portfolio')">Portfolio</a></li>
+                <li><a du-scrollspy="info" ng-click="doScroll('info')">Services</a></li>
+                <li><a du-scrollspy="cv" ng-click="doScroll('cv')">Curriculum Vitae</a></li>
+                <li><a du-scrollspy="contact" ng-click="doScroll('contact')">Contact</a></li>
+            </ul>
         </div>
     </div>
 </nav>

@@ -1,0 +1,23 @@
+{
+  "order": 4,
+  "name": "nuata",
+  "label": "Nuata",
+  "imagePath": "images/nuata/",
+  "padding": 30,
+  "images": [{
+    "name": "049.png",
+    "description": ""
+  }, {
+    "name": "050.png",
+    "description": ""
+  }, {
+    "name": "051.png",
+    "description": ""
+  }, {
+    "name": "052.png",
+    "description": ""
+  }, {
+    "name": "053.png",
+    "description": ""
+  }]
+}

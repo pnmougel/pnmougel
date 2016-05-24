@@ -53,26 +53,30 @@
   <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
   <script src="lib/ngmap/build/scripts/ng-map.js"></script>
   <script src="lib/angular-scroll/angular-scroll.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
   <!-- endinject -->
 
   <!-- app:js -->
   <script src="app/app.js"></script>
   <script src="app/contact/directive.js"></script>
   <script src="app/cv/directive.js"></script>
+  <script src="app/directives/scroll-animate-directive.js"></script>
   <script src="app/footer/directive.js"></script>
+  <script src="app/info/directive.js"></script>
   <script src="app/main/controller.js"></script>
   <script src="app/menu/directive.js"></script>
   <script src="app/portfolio/directive.js"></script>
+  <script src="app/project/controller.js"></script>
   <!-- endinject -->
 
   <base href="/">
 </head>
 
 <body ng-app="pnmougel">
-  <menu></menu>
-  <div class="container-fluid main-container" style="top: 50px; position: relative;">
-    <ng-view class="main-container">
-    </ng-view>
+  <div class="container-fluid main-container">
+    <div ui-view class="view main-container"></div >
   </div>
 </body>
 </html>

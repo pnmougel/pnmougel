@@ -1,24 +1,52 @@
 {
-  "order": 1,
+  "order": 7,
+  "name": "arpejeh",
   "label": "Arpejeh",
   "imagePath": "images/arpejeh/",
-  "image": "logo_white.png",
-  "logo": "logo_ok.png",
   "padding": 30,
+  "link": {
+    "url": "http://www.arpejeh.com/",
+    "private": false
+  },
+  "client": "Association Arpejeh",
+  "description": "Site web de présentation de l'association",
+  "features": [{
+    "label": "Site accessible aux personnes en situation de handicap",
+    "images": ["036"]
+  },{
+    "label": "Label AccessiWeb Bronze",
+    "images": ["036"]
+  },{
+    "label": "Plan de site automatique",
+    "images": ["036"]
+  },{
+    "label": "Formulaire de contact",
+    "images": ["036"]
+  },{
+    "label": "Interface d'administration (non visible)",
+    "images": ["036"]
+  },{
+    "label": "Fonction de recherche",
+    "images": ["036"]
+  }],
+
   "images": [{
-    "name": "049.png",
+    "id": "049",
     "description": ""
   }, {
-    "name": "050.png",
+    "id": "051",
     "description": ""
   }, {
-    "name": "051.png",
+    "id": "052",
     "description": ""
   }, {
-    "name": "052.png",
+    "id": "054",
     "description": ""
   }, {
-    "name": "053.png",
+    "id": "055",
+    "description": ""
+  }, {
+    "id": "056",
     "description": ""
   }]
 }

@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Hello World !",
+    "date": "1982",
+    "length": "33 ans",
+    "icon": "fa fa-child",
+    "category": "other",
+    "skills": [],
+    "description": []
+  },
+  {
+    "name": "BTS Informatique de gestion",
+    "date": "2003",
+    "length": "2 ans",
+    "icon": "fa fa-graduation-cap",
+    "category": "degree",
+    "skills": ["mysql", "php", "c", "java"],
+    "description": ["École CIEFA, Vaise", "Formation en alternance"]
+  },
+  {
+    "name": "Bull SA",
+    "date": "2003",
+    "length": "2 ans",
+    "icon": "fa fa-users",
+    "category": "jobexperience",
+    "skills": ["c", "java", "mysql"],
+    "description": ["Développeur en informatique"]
+  },
+  {
+    "name": "Licence Informatique",
+    "date": "2005",
+    "length": "1 an",
+    "icon": "fa fa-graduation-cap",
+    "category": "degree",
+    "skills": ["java", "c"],
+    "description": ["Université Claude Bernard, Lyon 1"]
+  },
+  {
+    "name": "Cycle ingénieur Informatique",
+    "date": "2006",
+    "length": "3 ans",
+    "icon": "fa fa-graduation-cap",
+    "category": "degree",
+    "skills": ["java", "c"],
+    "description": ["INSA de Lyon, Villeurbanne"]
+  },
+  {
+    "name": "Arpejeh",
+    "date": "2009",
+    "length": "2 mois",
+    "icon": "fa fa-laptop",
+    "category": "freelance",
+    "skills": ["php", "mysql"],
+    "description": ["Réalisation du site web"]
+  },
+  {
+    "name": "Doctorat en analyse de données",
+    "date": "2009",
+    "length": "3 ans",
+    "icon": "fa fa-graduation-cap",
+    "category": "degree",
+    "skills": ["python", "scala", "mysql", "postgresql", "c", "latex"],
+    "description": ["Laboratoires LIRIS et INRIA, INSA de Lyon", "10 articles publiés"]
+  },
+  {
+    "name": "Enseignement de l'informatique",
+    "date": "2009",
+    "length": "2 ans",
+    "icon": "fa fa-users",
+    "category": "jobexperience",
+    "skills": ["java"],
+    "description": ["Élèves de l'école préparatoire à l'INSA de Lyon"]
+  },
+  {
+    "name": "Ingénieur de recherche",
+    "date": "2012",
+    "length": "1 an",
+    "icon": "fa fa-users",
+    "category": "jobexperience",
+    "skills": ["scala", "java", "postgresql", "r", "latex", "matlab"],
+    "description": ["Laboratoire PPME, Université de Nouvelle Calédonie"]
+  },
+  {
+    "name": "sColor",
+    "date": "2012",
+    "length": "3 mois",
+    "icon": "fa fa-flask",
+    "category": "project",
+    "skills": ["scala", "javascript", "postgresql", "play", "bootstrap"],
+    "description": ["Application pour la notation des conférences scientifiques"]
+  },
+  {
+    "name": "Ingénieur de recherche",
+    "date": "2013",
+    "length": "1 an",
+    "icon": "fa fa-users",
+    "category": "jobexperience",
+    "skills": ["scala", "java", "r", "latex"],
+    "description": ["Laboratoire Hubert Curien, Université de Saint-Étienne"]
+  },
+  {
+    "name": "Votcast",
+    "date": "2015",
+    "length": "8 mois",
+    "icon": "fa fa-flask",
+    "category": "project",
+    "skills": ["nodejs", "mongodb", "javascript", "angular", "cordova", "ionic", "bootstrap"],
+    "description": ["Application mobile pour le partage d'opinion"]
+  },
+  {
+    "name": "Pilot'Partner",
+    "date": "2015",
+    "length": "20 jours",
+    "icon": "fa fa-laptop",
+    "category": "freelance",
+    "skills": ["javascript", "angular", "bootstrap"],
+    "description": ["Réalisation du site web"]
+  },
+  {
+    "name": "Vitrine VO",
+    "date": "2015",
+    "length": "20 jours",
+    "icon": "fa fa-laptop",
+    "category": "freelance",
+    "skills": ["javascript", "angular", "bootstrap"],
+    "description": ["Application de gestion d'un parc de véhicules d'occasion"]
+  },
+  {
+    "name": "Nuata",
+    "date": "2015",
+    "length": "En cours",
+    "icon": "fa fa-flask",
+    "category": "project",
+    "skills": ["elasticsearch", "javascript", "typescript", "scala", "akka", "angular", "bootstrap"],
+    "description": ["Application pour la recherche et la visualisation de données"]
+  }
+]

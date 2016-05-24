@@ -9,3 +9,63 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+
+// Mixins and Placeholders
+%clearfix {
+  &:after, &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@mixin prefix($prop, $val) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+    #{$prefix}#{$prop}: $val;
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+// breakpoints
+
+$S:     320px;
+$M:     768px;
+$L:     1170px;
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+}
+
+
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin border-radius($radius:.25em) {
+  border-radius: $radius;
+}
+

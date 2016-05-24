@@ -1,0 +1,100 @@
+.project-container {
+  background-color: #fff;
+  min-height:100%;
+
+  .section-header {
+    padding: 70px 0;
+
+    .title {
+      text-transform: none;
+      padding: 0 30px;
+      color: $portfolio-color;
+    }
+    .subtitle {
+      font-family: 'Lato';
+      margin-top: 20px;
+      font-size: 30px;
+    }
+    .horizontal-bar {
+      border-color: $portfolio-color;
+      margin-top: 10px;
+    }
+
+
+    i {
+      cursor: pointer;
+      position: relative;
+      top: -7px;
+      font-size:40px;
+
+
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $portfolio-color;
+    }
+
+
+    @media (max-width: $screen-sm) {
+      i {
+        font-size:20px;
+        top: 0;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .images-container {
+    .back-to-home {
+      cursor: pointer;
+      font-size: 200px;
+      padding-left: 60px;
+      color: #FFF;
+    }
+    .back-to-home:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    background-color: $portfolio-color;
+
+    img {
+      cursor: pointer;
+      width: 100%;
+    }
+    img:hover {
+      border: 3px solid #1E656C;
+    }
+  }
+  .project-info {
+    .client {
+      font-size:30px;
+      font-weight:bold;
+    }
+    .link {
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left:0;
+      padding-top:15px;
+    }
+    li {
+      margin-top:5px;
+      padding-left:0;
+      list-style: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.modal-dialog {
+  .modal-content {
+    .modal-body {
+      padding:0;
+    }
+  }
+}
+
+
+

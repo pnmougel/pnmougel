@@ -1,18 +1,28 @@
 // Lib import
 @import "../lib/bootstrap/dist/css/bootstrap";
+@import "../lib/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css";
+ @import "../lib/animate.css/animate.css";
+
 
 // App import
 @import "colors";
 @import "fonts";
 @import "utils";
+@import "responsive";
 @import "animate";
 
 /* app */
 @import "../app/styles";
 @import "../app/contact/styles";
 @import "../app/cv/styles";
+@import "../app/cv/timeline";
 @import "../app/footer/styles";
+@import "../app/info/styles";
 @import "../app/main/styles";
 @import "../app/menu/styles";
 @import "../app/portfolio/styles";
+@import "../app/project/lightbox";
+@import "../app/project/styles";
 /* end */
+
+

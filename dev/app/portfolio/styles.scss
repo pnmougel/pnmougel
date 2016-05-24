@@ -1,18 +1,62 @@
-.portfolio-item {
-  border-left: 30px solid #FFF;
-  border-right: 30px solid #FFF;;
-  border-bottom: 30px solid #FFF;
-  .img-container {
-    border: 1px solid #333;
-    height: 300px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.5);
-    img {
-      width: 100%;
+
+.portfolio {
+  $portfolio-bg: #FFF;
+
+  $image-margin-md: 15px;
+  $image-height-md: 250px;
+  $image-margin-sm: 5px;
+  $image-height-sm: 150px;
+
+  .section {
+    color: #FFF;
+    background-color: $portfolio-bg;
+    .section-header {
+      .title-bold {
+        margin-right:0;
+      }
     }
   }
 
-  .img-container:hover {
-    background-color: #FFF;
+  .projects-container {
+    background-image: url('../images/back2.jpg');
+    background-size: cover;
+    background-attachment:fixed;
   }
+
+  .portfolio-item {
+    border-left: $image-margin-md solid $portfolio-bg;
+    border-right: $image-margin-md solid $portfolio-bg;;
+    border-bottom: 2 * $image-margin-md solid $portfolio-bg;
+    padding: 0;
+    .img-container {
+      border: 2px solid $portfolio-color;
+      height: $image-height-md;
+
+      cursor: pointer;
+      //background-color: rgba(255, 255, 255, 0.5);
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: $screen-sm) {
+      border-left: $image-margin-sm solid $portfolio-bg;
+      border-right: $image-margin-sm solid $portfolio-bg;;
+      border-bottom: 2 * $image-margin-sm solid $portfolio-bg;
+      .img-container {
+        height: $image-height-sm;
+      }
+    }
+    .img-container:hover {
+       background-color: #FFF;
+    }
+  }
+  .filler {
+    @media (max-width: $screen-sm) {
+      height: $image-height-sm + 2*$image-margin-sm;
+    }
+    height: $image-height-md + 2*$image-margin-md;
+    background-color: $portfolio-bg;
+  }
+
+  @include header-color($portfolio-color)
 }

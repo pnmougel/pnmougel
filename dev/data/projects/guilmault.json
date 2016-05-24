@@ -1,24 +1,31 @@
 {
-  "order": 1,
-  "label": "Groupe Jean-Louis Guilmault",
+  "order": 2,
+  "name": "guilmault",
+  "label": "Groupe Guilmault",
   "imagePath": "images/guilmault/",
-  "image": "logo_white.png",
-  "logo": "logo2.png",
   "padding": 50,
+  "link": {
+    "url": "http://www.groupeguilmault.fr/occasions/liste",
+    "private": false
+  },
+  "client": "Groupe Guilmault",
+  "description": "Interface de recherche de véhicules d'occasion",
+  "features": [{
+    "label": "Affichage responsive",
+    "images": ["036"]
+  },{
+    "label": "Pagination",
+    "images": ["036"]
+  },{
+    "label": "Filtres",
+    "images": ["036"]
+  }],
+
   "images": [{
-    "name": "036.png",
+    "id": "060",
     "description": ""
   }, {
-    "name": "037.png",
-    "description": ""
-  }, {
-    "name": "038.png",
-    "description": ""
-  }, {
-    "name": "039.png",
-    "description": ""
-  }, {
-    "name": "040.png",
+    "id": "061",
     "description": ""
   }]
 }

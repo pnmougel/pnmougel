@@ -1,25 +1,67 @@
 {
-
   "order": 1,
+  "name": "vitrinevo",
   "label": "VitrineVo",
   "imagePath": "images/vitrinevo/",
   "padding": 50,
-  "image": "logo.png",
-  "logo": "vitrinevo_fr_bleu.png",
+  "link": {
+    "url": "http://www.vitrinevo.fr/",
+    "private": true
+  },
+  "client": "Groupe Guilmault",
+  "description": "Application pour la gestion de véhicules d'occasion",
+  "features": [{
+    "label": "Authentification",
+    "images": ["036"]
+  },{
+    "label": "Gestion des droits utilisateurs",
+    "images": ["036"]
+  },{
+    "label": "Gallerie d'images",
+    "images": ["036"]
+  },{
+    "label": "Filtrage dynamique",
+    "images": ["036"]
+  },{
+    "label": "Interface responsive",
+    "images": ["036"]
+  },{
+    "label": "API Rest (backend php symfony)",
+    "images": ["036"]
+  },{
+    "label": "Affichage de graphiques",
+    "images": ["036"]
+  }],
+
   "images": [{
-    "name": "036.png",
+    "id": "036",
     "description": ""
   }, {
-    "name": "037.png",
+    "id": "037",
     "description": ""
   }, {
-    "name": "038.png",
+    "id": "038",
     "description": ""
   }, {
-    "name": "039.png",
+    "id": "039",
     "description": ""
   }, {
-    "name": "040.png",
+    "id": "040",
+    "description": ""
+  }, {
+    "id": "041",
+    "description": ""
+  }, {
+    "id": "044",
+    "description": ""
+  }, {
+    "id": "045",
+    "description": ""
+  }, {
+    "id": "046",
+    "description": ""
+  }, {
+    "id": "047",
     "description": ""
   }]
 }

@@ -29,12 +29,15 @@ gulp.task('copy-html', function () {
     return gulp.src('./dev/app/**/*.html').pipe(gulp.dest('www/app/'));
 });
 
-gulp.task('copy-jquery', function () {
-    return gulp.src('./dev/lib/jquery/dist/jquery.min.js').pipe(gulp.dest('www/js/'));
+
+gulp.task('copy-data', function () {
+    return gulp.src('./dev/data/*.json').pipe(gulp.dest('www/data/'));
 });
 
-gulp.task('copy-lodash', function () {
-    return gulp.src('./dev/lib/lodash/dist/lodash.min.js').pipe(gulp.dest('www/js/'));
+
+gulp.task('copy-lib', function () {
+    gulp.src('./dev/lib/lodash/dist/lodash.min.js').pipe(gulp.dest('www/js/'));
+    return gulp.src('./dev/lib/jquery/dist/jquery.min.js').pipe(gulp.dest('www/js/'));
 });
 
 gulp.task('copy-index', function () {
@@ -42,12 +45,12 @@ gulp.task('copy-index', function () {
 });
 
 gulp.task('copy-resources', function () {
-    gulp.src('./dev/images/*').pipe(gulp.dest('www/images'));
+    gulp.src('./dev/images/**/*').pipe(gulp.dest('www/images'));
     gulp.src('./dev/fonts/*').pipe(gulp.dest('www/fonts'));
     return gulp.src('./dev/icons/*').pipe(gulp.dest('www/icons'));
 });
 
-gulp.task('copy', ['copy-index', 'copy-resources', 'copy-html', 'copy-jquery', 'copy-lodash']);
+gulp.task('copy', ['copy-index', 'copy-resources', 'copy-html', 'copy-lib', 'copy-data']);
 
 gulp.task('inject', function () {
     var vendorSources = gulp.src(['www/js/lib.min.js'], {read: false});

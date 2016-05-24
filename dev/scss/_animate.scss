@@ -1,7 +1,13 @@
 .view.ng-enter {
-  transition:0.3s linear all;
+  div {
+    display: none;
+  }
+  transition:0.5s linear all;
   opacity: 0;
 }
 .view.ng-enter.ng-enter-active {
-  opacity:1;
+  div {
+    display: block;
+  }
+  opacity: 1;
 }

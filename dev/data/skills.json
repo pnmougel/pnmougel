@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Frameworks",
+    "showIcons": true,
+    "skills": [{
+      "label": "NodeJs",
+      "id": "nodejs"
+    },{
+      "label": "Play",
+      "id": "play"
+    },{
+      "label": "Akka",
+      "id": "akka"
+    },{
+      "label": "Angular",
+      "id": "angular"
+    },{
+      "label": "Cordova",
+      "id": "cordova"
+    },{
+      "label": "Ionic",
+      "id": "ionic"
+    },{
+      "label": "Twitter Bootstrap",
+      "id": "bootstrap"
+    }]
+  },
+  {
+    "name": "Base de données",
+    "showIcons": true,
+    "skills": [{
+      "label": "MySql",
+      "id": "mysql"
+    },{
+      "label": "Postgresql",
+      "id": "postgresql"
+    },{
+      "label": "ElasticSearch",
+      "id": "elasticsearch"
+    },{
+      "label": "MongoDb",
+      "id": "mongodb"
+    }]
+  },
+  {
+    "name": "Languages",
+    "showIcons": true,
+    "skills": [{
+      "label": "Java",
+      "id": "java"
+    },{
+      "label": "Scala",
+      "id": "scala"
+    },{
+      "label": "Python",
+      "id": "python"
+    },{
+      "label": "Javascript",
+      "id": "javascript"
+    },{
+      "label": "Typescript",
+      "id": "typescript"
+    },{
+      "label": "C / C++",
+      "id": "c"
+    },{
+      "label": "Php",
+      "id": "php"
+    }]
+  },
+  {
+    "name": "Outils",
+    "showIcons": true,
+    "skills": [{
+      "label": "Github",
+      "id": "github"
+    },{
+      "label": "R",
+      "id": "r"
+    },{
+      "label": "Matlab",
+      "id": "matlab"
+    },{
+      "label": "Latex",
+      "id": "latex"
+    }]
+  }
+]

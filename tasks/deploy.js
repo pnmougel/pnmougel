@@ -27,7 +27,22 @@ gulp.task('deploy', function (done) {
     );
 });
 
+
+gulp.task('deploy-all', function (done) {
+    runSequence(
+        'build',
+        'send-all',
+        'send-index',
+        done
+    );
+});
+
 gulp.task('send', function () {
+    return gulp.src(['./www/**', '!./www/images/**', '!./www/images/**', '!./www/fonts/**'])
+        .pipe(gulpSSH.dest('/home/nico/pnmougel/'))
+});
+
+gulp.task('send-all', function () {
     return gulp.src(['./www/**'])
         .pipe(gulpSSH.dest('/home/nico/pnmougel/'))
 });
